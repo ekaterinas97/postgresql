@@ -1,0 +1,7 @@
+CREATE TABLE subscriptions (
+	id SERIAL PRIMARY KEY,
+	subscriber_id INT NOT NULL,
+	to_target_id INT NOT NULL,
+	is_community BOOLEAN,
+	subscribed_at TIMESTAMP
+);
